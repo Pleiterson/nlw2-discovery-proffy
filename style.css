@@ -1,0 +1,69 @@
+/* aplicação de comentários no css */
+/* root -> elemento raiz de todo o html */
+:root {
+    /* cada campo color abaixo é uma variável css já com seus valores definidos
+    (cores em hexadecimal) */
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    /* variável, tamanho da font padrão: 16px - 100% - 1rem (equivalência)
+    medidas rem e % são flexíveis, fonts px (pixels) são fixas */
+    font-size: 60%; /* controle das medidas rem */
+}
+
+html, body {
+    height: 100vh; /* height = altura */
+}
+
+body {
+    /* definindo o fundo da tag <body> com a variável "--color-primary-darker"
+    var busca a referência do root para aplicar a variável desejada dentro dos parênteses */
+    background-color: var(--color-background);
+    display: flex; /* todos os elementos dentro de <body> são flexível */
+    align-items: center; /* alinha o conteúdo do <body> no centro da página, linha */
+    justify-content: center; /*alinha o conteúdo do <body> no centro da página, coluna*/
+}
+
+/* * significa que pode ser usado em vários elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    /* box model - caixa
+    border: 1px solid red; /* espessura da borda na tela, limite da caixa
+    padding: 40px; /* preenchimento, dentro da borda na tela
+    margin: 60px; /* espaçamento por fora da caixa, extremidades da tela do navegador
+    width: 300px; /* largura da caixa/conteúdo
+    height: 300px; /* altura da caixa/conteúdo */
+
+    width: 90vw; /* widht = altura, vai adaptar 90 view do dispositivo */
+    max-width: 700px; /* máximo de 700 pixels da caixa/tela */
+}
+
+/* aplicando a fonte do link do html nas tags abaixo */
+body, input, button, textarea {
+    /* font: 500 1.6rem Poppins; */
+    font-size: 1.6rem; /* 1.6rem define o tamanho da fonte, calcula 1.6rem de 60% do root */
+    font-family: Poppins; /* Poppins define estilo da fonte */
+    color: var(--color-text-base); /* buscando a referência da cor definida no root */
+}
