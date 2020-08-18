@@ -1,0 +1,144 @@
+/* CSS da configurção da Página Home */
+#page-landing {
+    /* definindo a cor de fundo da página */
+    background-color: var(--color-primary);
+}
+
+#page-landing #container {
+    /* definindo a cor do texto da página */
+    color: var(--color-text-in-primary);
+}
+
+.logo-container img {
+    /* definindo o tamnho da imagem "Proffy" da página */
+    height: 10rem;
+}
+
+.logo-container {
+    text-align: center; /* centralizando o texto e a imagem na tela */
+    margin-bottom: 3.2rem; /* definindo o espaço do texto com a imagem */
+}
+
+.logo-container h2 {
+    font-weight: 500; /* definindo a espessura do texto */
+    font-size: 3.6rem; /* definindo o tamanho do texto */
+    line-height: 4.6rem; /* espaçamento entre a imagem e o texto, com a linha */
+    margin-top: 0.8rem; /* espaçamento entre a imagem e o texto, com a margem */
+}
+
+.hero-image {
+    /* defeinindo o tamanho da imagem na página */
+    width: 100%;
+}
+
+.buttons-container {
+    display: flex; /* deixa os itens um ao lado do outro */
+    justify-content: center; /* centraliza todo o conteúdo no centro da tela, sem o display flex não funciona */
+    margin: 3.2rem 0; /* espaçamento da margem para o conteúdo do botão */
+}
+
+.buttons-container a {
+    width: 30rem;
+    height: 10.4rem;
+    border-radius: 0.8rem; /* arrendonda as bordas do botão */
+    margin-right: 1.6rem; /* espço entre os botões */
+    font: 700 2.4rem Archivo; /* definindo a fonte e tamanho paraos botões */
+    display: flex;
+    align-items: center; /* alinhando o texto na linha junto com a imagem */
+    justify-content: center; /* centralizando os itens no centro do botão */
+    text-decoration: none; /* removendo a linha de link do texto do botão */
+    color: var(--color-button-text); /* definindo a cor do texto do botão declarado no main.css */
+    transition: backgroud 0.2s; /* aplicando a transição de mudança do fundo do botão */
+}
+
+.buttons-container a img {
+    width: 4rem; /* definindo o tamanho das imagens dos botões */
+    margin-right: 2.4rem; /* espço entre a imagem e o texto dos botões */
+}
+
+.buttons-container a.study {
+    /* definindo a cor do botão "Estudar" */
+    background: var(--color-primary-lighter);
+}
+
+/* hover é quando ficamos com o mouse em cima de um item na página */
+.buttons-container a.study:hover {
+    background: var(--color-primary-light);
+}
+
+.buttons-container a.give-classes {
+    /* definindo a cor do botão "Dar Aulas" */
+    background: var(--color-secondary);
+    margin-right: 0; /* retirando o espaço após o botão "Dar Aulas" */
+}
+
+.buttons-container a.give-classes:hover {
+    background: var(--color-secondary-dark);
+}
+
+.total-connections {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-connections img {
+    margin-left: 0.8rem; /* definindo o espaço entre o o texto e o Coração Roxo */
+}
+
+@media (max-width: 699px) {
+    :root {
+        /* modificando as medidas rem */
+        font-size: 40%;
+    }    
+}
+
+/* só executará quando a largura mínima da tela for de 1.100 pixels pra cima
+adequações de telas, desktop */
+@media (min-width: 1100px) {
+    #page-landing #container {
+        max-width: 1100px; /* a largura não será menor que 1.100 pixels */
+        display: grid; /* informando qua trabalharemos com uma tabela, grid */
+        grid-template-columns: 2fr 1fr 2fr; /* 3 colunas de espassamento de frações cada */
+        grid-template-rows: 350px 1fr; /* 2 linhas, uma fixa em 350 pixels e uma fracioanda dinâmica */
+        grid-template-areas: /* definindo a posição de cada item na página */
+        "proffy image image"
+        "button button text";
+        /*gap: 60px; /* espassamento de cada área do grid */
+        column-gap: 87px; /* espassamento das colunas do grid */
+        row-gap: 86px; /* espassamento das linhas do grid */
+    }
+
+    .logo-container {
+        /* definidno a logo na área proffy, já declarada anteriormente */
+        grid-area: proffy;
+        text-align: initial; /* reseta para o início */
+        align-self: center; /* alinha o conteúdo no centro do grid */
+        margin: 0;
+    }
+
+    .logo-container img {
+        height: 127px;
+    }
+
+    .hero-image {
+        /* definindo a imagem na área imagem, já declarada anteriormente */
+        grid-area: image;
+        height: 350px;
+    }
+
+    .buttons-container {
+        /* definindo os botões na área button, já declarada anteriormente */
+        grid-area: button;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .total-connections {
+        /* definindo o texto na área text, já declarada anteriormente */
+        grid-area: text;
+        justify-self: end; /* coloca o conteúdo do grid no centro e alinhado no final */
+        font-size: 1.2rem;
+    }
+}

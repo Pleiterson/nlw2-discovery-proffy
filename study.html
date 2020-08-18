@@ -1,0 +1,136 @@
+<!-- Página Listagem, Proffys disponíveis para Estudar -->
+<!-- aplicação de comentários no html -->
+<!-- isso é uma tag <html> -->
+<!-- tag <head> ficarão as configurações do documento -->
+<!-- tag <body>, fica todo conteúdo visível da página -->
+<!DOCTYPE html>
+<html lang="pt_br"> <!-- os itens junto com as tags são um atributo, no caso lang -->
+<head> 
+    <!-- meta s'ao configurações de metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tag para definir o título da página -->
+    <title>Proffy | Sua plataforma de estudos online</title>
+    
+    <!-- caminho do arquivo style.css para ser aplicado neste arquivo html -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/partials/page-study.css">
+     
+    <!-- font de texto que iremos utilizar no projeto
+    onde será aplicado ficará definido no style.css
+    arquivos são responsáveis por inclusão de arquivos -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+    <!-- <style>
+        /*comentários no css
+        #bodie -> definindo seletor de hastag no css, mais forte
+        .bodie -> definindo classes no css
+        bodie -> definindo seletor de tag no css
+        */
+    </style> -->
+</head>
+<body id="page-study">
+    <!-- <div> possui a representatividade de um container/caixa -->
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/"><img src="./images/icons/back.svg" alt="Voltar"></a>
+                <img src="./images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <!-- a tag <strong> funciona como a tag padrão de texto, mas ela já vem com o bold, negrito -->
+                <strong>Esses são os proffys disponíveis.</strong>
+                <!-- tag <form> é para formulários, ela ja solicita para onde será enviado os dados "action" -->
+                <form id="search-teachers">
+                    <div class="select-block"> <!-- <div> caixa -->
+                        <!-- mostra o campo que ela está identificando no <select>, no caso o subject de Matérias -->
+                        <label for="subject">Matéria</label>
+                        <!-- <select> é o campo onde colocamos as opções, <option> -->
+                        <select name="subject" id="subject">
+                            <!-- já se encontra desabilitada por padrão, e pede para selecionar uma opção. Toda <option> deve ter um valor "value" -->
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="1">Artes</option>
+                            <option value="2">Biologia</option>
+                            <option value="3">Ciências</option>
+                            <option value="4">Educação física</option>
+                            <option value="5">Física</option>
+                            <option value="6">Geografia</option>
+                            <option value="7">História</option>
+                            <option value="8">Matemática</option>
+                            <option value="9">Português</option>
+                            <option value="10">Química</option>
+                        </select>
+                    </div>
+
+                    <div class="select-block">
+                        <label for="weekday">Dia da semana</label>
+                        <select name="weekday" id="weekday">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="0">Domingo</option>
+                            <option value="1">Segunda-feira</option>
+                            <option value="2">Terça-feira</option>
+                            <option value="3">Quarta-feira</option>
+                            <option value="4">Quinta-feira</option>
+                            <option value="5">Sexta-feira</option>
+                            <option value="6">Sábado</option>
+                        </select>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="time">Hora</label>
+                        <!-- a tag <nput> fecha nela mesma (>) ou (/>) -->
+                        <input name="time" id="time" type="time" >
+                    </div>
+                    <!-- o botão do tipo "submit" vai pegar os dados do formulário e enviará para o back-end, que retornará os dados solicitados -->
+                    <button type="submit">Filtrar</button>
+                </form>
+            </div>
+        </header> 
+        <!-- <main> conteúdo principal da página -->
+        <main>
+            <!-- <article> repete o que tem várias vezes -->
+            <article class="teacher-item">
+                <header>
+                    <img src="https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4" alt="Diego Fernandes">
+                    <div>
+                        <strong>Diego Fernandes</strong>
+                        <span>Química</span>
+                    </div>
+                </header>
+            
+                <p>Entusiasta das melhores tecnologias de química avançada.<br><br>Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.</p>
+            
+                <footer>
+                    <p>Preço/hora<strong>R$ 20,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="./images/icons/whatsapp.svg" alt="WhatsApp">Entrar em contato
+                    </button>
+                </footer>
+            </article>
+
+            <article class="teacher-item">
+                <header>
+                    <img src="https://avatars2.githubusercontent.com/u/6643122?s=400&u=1e9e1f04b76fb5374e6a041f5e41dce83f3b5d92&v=4" alt="Mayk Brito">
+                    <div>
+                        <strong>Mayk Brito</strong>
+                        <span>Educação Física</span>
+                    </div>
+                </header>
+            
+                <p>Instrutor de Educação Física para iniciantes, minha missão de vida é levar saúde e contribuir para o crescimento de quem se interessar.<br><br>Comecei a minha jornada profissional em 2001, quando meu pai me deu dois alteres de 32kg com a seguinte condição: "Aprenda a fazer dinheiro com isso!"</p>
+            
+                <footer>
+                    <p>Preço/hora<strong>R$ 40,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="./images/icons/whatsapp.svg" alt="WhatsApp">Entrar em contato
+                    </button>
+                </footer>
+            </article>            
+        </main>
+    </div>
+</body>
+</html>

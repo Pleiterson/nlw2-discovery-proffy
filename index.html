@@ -1,3 +1,4 @@
+<!-- Página Home da plataforma Proffy -->
 <!-- aplicação de comentários no html -->
 <!-- isso é uma tag <html> -->
 <!-- tag <head> ficarão as configurações do documento -->
@@ -5,6 +6,7 @@
 <!DOCTYPE html>
 <html lang="pt_br"> <!-- os itens junto com as tags são um atributo, no caso lang -->
 <head> 
+    <!-- meta s'ao configurações de metadados -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,11 +14,13 @@
     <title>Proffy | Sua plataforma de estudos online</title>
     
     <!-- caminho do arquivo style.css para ser aplicado neste arquivo html -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/partials/page-landing.css">
      
     <!-- font de texto que iremos utilizar no projeto
-    onde será aplicado ficará definido no style.css -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    onde será aplicado ficará definido no style.css
+    arquivos são responsáveis por inclusão de arquivos -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
     <!-- <style>
         /*comentários no css
@@ -27,15 +31,37 @@
     </style> -->
 </head>
 <body id="page-landing">
+    <!-- <div> possui a representatividade de um container/caixa -->
     <div id="container">
-        <h1>Proffy</h1> <!-- tag h1 define o tamanho da fonte na página -->
-        <p>Sua plataforma de estudos online</p> <!-- tag <p> define um parágrafo em um texto -->
+        <!-- <h1>Proffy</h1> tag <h1> define o tamanho da fonte na página -->
+        <div class="logo-container">
+            <img src="./images/logo.svg" alt="Proffy">
+            <h2>Sua plataforma de estudos online</h2>
+        </div>
+        <!-- <p>Sua plataforma de estudos online</p> tag <p> define um parágrafo em um texto -->
         
         <!-- tag <img> define uma imagem, src insere o link de uma imagem, alt insere uma imagem padrão com o nome da imagem -->
         <!-- <img src="" alt="Logo"> -->
-    
-        <button>Estudar</button> <!-- tag <button> define um botão na página -->
-        <button>Dar Aulas</button>
+        
+        <img class="hero-image" src="./images/landing.svg" alt="Plataforma de Estudos">
+
+        <div class="buttons-container">
+            <!-- tag <a> são responsáveis por representar links -->
+            <a class="study" href="./study.html"> 
+                <img src="./images/icons/study.svg" alt="Estudar">
+                Estudar
+            </a>
+            <a class="give-classes" href="./give-classes.html">
+                <img src="./images/icons/give-classes.svg" alt="Dar Aulas">
+                Dar Aulas
+            </a>            
+        </div>
+        <p class="total-connections">
+            Total de 200 conexões já realizadas
+            <img src="./images/icons/purple-heart.svg" alt="Coração Roxo">
+        </p>
+        <!-- <button>Estudar</button> tag <button> define um botão na página
+        <button>Dar Aulas</button>  -->
     </div>
 </body>
 </html>

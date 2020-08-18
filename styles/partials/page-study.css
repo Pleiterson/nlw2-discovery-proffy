@@ -1,0 +1,274 @@
+/* CSS da configurção da Página Listagem de Proffys */
+#page-study #container {
+    width: 100vw; /* ocupando todo a largura visível da tela */
+    height: 100vh; /* ocupando todo a altura visível da tela */
+}
+
+.page-header {
+    background-color: var(--color-primary); /* definindo a cor de fundo do header */
+    display: flex;
+    flex-direction: column; /* definindo o flex acima em colunas */
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto; /* colocando espaço automático no início e fim do top-bar-container */
+    display: flex; /* centralizando todo o conteúdo do top-bar-container */
+    align-items: center; /* centralizando a seta voltar no centro do top-bar-container */
+    justify-content: space-between; /* colocando espaço entre a imagem de voltar e o Proffy */
+    padding: 1.6rem 0; /* colocando um espaço de 1.6rem no início/fim da tela ao top-bar-container */
+}
+
+.page-header .top-bar-container a {
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.6;
+}
+
+.page-header .top-bar-container img {
+    height: 1.6rem; /* definindo o tamanho das imagens do top-bar-container, seta e proffy */
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 3.2rem auto;
+    position: relative;
+}
+
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo; /* bold, tamanho e tipo da fonte do texto */
+    line-height: 4.2rem; /* altura da linha do texto */
+    color: var(--color-title-in-primary); /* cor do texto */
+}
+
+#search-teachers {
+    margin-top: 3.2rem; /* margem de topo do formulário */
+}
+
+#search-teachers label {
+    color: var(--color-text-in-primary); /* cor dos labels dos formulários */
+}
+
+#search-teachers .select-block {
+    margin-bottom: 1.4rem; /* espassamento entre os itens do formulário */
+}
+
+#search-teachers button {
+    width: 100%; /* largura do botão */
+    height: 5.6rem; /* altura do botão */
+    background: var(--color-secondary); /* cor do botão */
+    color: var(--color-button-text); /* cor do texto do botão */
+    border: 0; /* elimina a borda padrão do botão */
+    border-radius: 0.8rem; /* arredondando as pontas do botão */
+    cursor: pointer; /* definindo o ícone do mouse ao clicar no botão, mãozinha */
+    font: 700 1.6rem Archivo; /* bold, tamanho e tipo da fonte do texto do botão */
+    display: flex; /* coloca o texto no canto superior esquerdo do botão, garante que sempre estará alinhado ao meio */
+    align-items: center; /*centraliza o texto no canto esquerdo do botão, garante que sempre estará alinhado ao meio */
+    justify-content: center; /* centraliza o texto no meio do botão, garante que sempre estará alinhado ao meio */
+    text-decoration: none; /* elimina qualquer decoração padrão do botão */
+    transition: background 0.2s; /* realiza uma transição de cor de fundo ao passar o mouse no botão */
+    margin-top: 3.2rem; /* margem de topo do formulário para o botão */
+}
+
+#search-teachers button:hover {
+    background-color: var(--color-secondary-dark); /*defindo a cor para a transição do botão */
+}
+
+.select-block label,
+.input-block label {
+    font-size: 1.4rem;
+    color: var(--color-text-complement);
+}
+
+.input-block input,
+.select-block select {
+    width: 100%; /* largura dos formulários */
+    height: 5.6rem; /* altura dos formulários */
+    margin-top: 0.8rem; /* margem entre os labels e formulários */
+    border-radius: 0.8rem; /* arredondando as pontas dos formulários */
+    background: var(--color-input-background); /* cor dos formulários */
+    border: 1px solid var(--color-line-in-white); /* cor da borda dos formulários */
+    outline: 0; /* retira a selação em torno dos formulários ao clicar neles */
+    padding: 0 1.6rem; /* colocando um espaço de 1.6rem no início/fim dos formulários */
+    font: 1.6rem Archivo; /* tamanho e tipo da fonte do texto do botão */
+}
+
+.input-block {
+    position: relative; /* definindo o input-block como relativo para ao focar ficar absoluto */
+}
+
+/* focando qual formulário está selecionado */
+.input-block:focus-within::after {
+    content: ""; /* after coloca um elemento html no <input> vazio definido em content: "" OBRIGATÓRIO */
+    width: calc(100% - 3.2rem); /* cálculo de largura disponível do elemento */
+    height: 2px; /* altura de 2px do elemento do focus */
+    background: var(--color-primary-light); /* cor do elemento focus */
+    position: absolute; /* para que funcione, primeiro temos que definir o input-block como relativo */
+    left: 1.6rem; /* deixa o elemento focus no formulário */
+    bottom: 0; /* deixa o elemento focus bem rente a borda do formulário */
+}
+
+#page-study main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+.teacher-item {
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+}
+
+.teacher-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem; /* distância entre a foto e o nome do proffy */
+}
+
+.teacher-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block; /* ocupa a linha inteira */
+    color: var(--color-text-title);
+}
+
+.teacher-item header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 0.4rem;
+}
+
+.teacher-item > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.teacher-item footer {
+    padding: 3.2rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher-item footer p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+
+.teacher-item footer p strong {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    display: block;
+}
+
+.teacher-item footer button {
+    width: 20rem;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    /* "space-evenly" espassamento constante nos elementos do botão em suas bordas */
+    justify-content: space-evenly;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-left: 1.6rem;
+}
+
+.teacher-item footer button:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+/* versão para Desktop */
+@media (min-width: 700px) {
+    #page-study #container {
+        max-width: 100vw; /* ocupa todo o espaço da tela */
+    }
+
+    .page-header {
+        height: 340px;
+        /*height: 250px;*/
+    }
+
+    .page-header .top-bar-container {
+        max-width: 1100px;
+    }
+
+    .page-header .header-content {
+        max-width: 740px;
+        margin: 0 auto;
+        flex: 1 1 ;
+        padding-bottom: 48px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page-header .header-content strong {
+        max-width: 350px;
+    }
+
+    .teacher-item header,
+    .teacher-item footer {
+        padding: 32px; /* espaço das extremidades das telas e com o conteúdo da página */
+    }
+
+    #search-teachers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* repete as colunas 4 vezes com 1fr */
+        gap: 16px; /*espaço entre as colunas do grid, formulário */
+        position: absolute;
+        bottom: -28px;
+    }
+
+    #page-study main {
+        padding: 32px 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
+    #search-teachers .select-block {
+        margin-bottom: 0;
+    }
+
+    .teacher-item > p {
+        padding: 0 32px;        
+    }
+
+    .teacher-item footer p strong {
+        display: initial;
+        margin-left: 16px;
+    }
+
+    .teacher-item footer button {
+        width: 245px;
+        font-size: 16px;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    .teacher-item footer button img {
+        margin-right: 16px;
+    }
+}

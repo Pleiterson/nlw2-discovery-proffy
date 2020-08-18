@@ -1,3 +1,4 @@
+/* CSS do main para as configurações iniciais de todo o site */
 /* aplicação de comentários no css */
 /* root -> elemento raiz de todo o html */
 :root {
@@ -55,7 +56,6 @@ body {
     margin: 60px; /* espaçamento por fora da caixa, extremidades da tela do navegador
     width: 300px; /* largura da caixa/conteúdo
     height: 300px; /* altura da caixa/conteúdo */
-
     width: 90vw; /* widht = altura, vai adaptar 90 view do dispositivo */
     max-width: 700px; /* máximo de 700 pixels da caixa/tela */
 }
@@ -66,4 +66,10 @@ body, input, button, textarea {
     font-size: 1.6rem; /* 1.6rem define o tamanho da fonte, calcula 1.6rem de 60% do root */
     font-family: Poppins; /* Poppins define estilo da fonte */
     color: var(--color-text-base); /* buscando a referência da cor definida no root */
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5% /* todo 1rem vai ser relativo a 10px */
+    }
 }
