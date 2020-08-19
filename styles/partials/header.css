@@ -1,0 +1,73 @@
+/* CSS da configurção do header, cabeçalho de algumas páginas do Proffy */
+.page-header {
+    background-color: var(--color-primary); /* definindo a cor de fundo do header */
+    display: flex;
+    flex-direction: column; /* definindo o flex acima em colunas */
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto; /* colocando espaço automático no início e fim do top-bar-container */
+    display: flex; /* centralizando todo o conteúdo do top-bar-container */
+    align-items: center; /* centralizando a seta voltar no centro do top-bar-container */
+    justify-content: space-between; /* colocando espaço entre a imagem de voltar e o Proffy */
+    padding: 1.6rem 0; /* colocando um espaço de 1.6rem no início/fim da tela ao top-bar-container */
+}
+
+.page-header .top-bar-container a {
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.6;
+}
+
+.page-header .top-bar-container > img {
+    height: 1.6rem; /* definindo o tamanho das imagens do top-bar-container, seta e proffy */
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 3.2rem auto;
+    position: relative;
+}
+
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo; /* bold, tamanho e tipo da fonte do texto */
+    line-height: 4.2rem; /* altura da linha do texto */
+    color: var(--color-title-in-primary); /* cor do texto */
+}
+
+.page-header .header-content p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
+}
+
+/* versão para Desktop */
+@media (min-width: 700px) {
+    .page-header {
+        height: 300px;
+        /*height: 200px;*/
+    }
+
+    .page-header .top-bar-container {
+        max-width: 1100px;
+    }
+
+    .page-header .header-content {
+        max-width: 740px;
+        margin: 0 auto;
+        flex: 1 1 ;
+        padding-bottom: 48px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page-header .header-content strong {
+        max-width: 350px;
+    }
+}

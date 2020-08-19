@@ -29,7 +29,8 @@ Neste projeto foi criado a plataforma de estudos [Proffy](https://proffydiscover
   Iniciado a codificação do layout da página de Listagem, que contém a relação de todos os proffys disponíveis para dar aulas. Configurado tamém o formulário de envio de dados ao back-end, que sera realizado posteriormente.
 
 - **Aula 03 | A Escolha da Stack**
-  - 
+  - Refatorado o código quando ao header das páginas e formulários. Concluído a codificação do layout da páginda de Formulários, onde será cadastrado os professores na plataforma de estudos Proffy.
+  Iniciado a codificação em JavaScript do projeto [Proffy](https://proffydiscovery-theta.vercel.app/) quanto a duplicação dos "Horários disponíveis" na página de formulários de cadastramento de proffys ao clicar no botão "+ Novo horário".
 
 - **Aula 04 | Até 2 Anos em 2 Meses**
   - 

@@ -1,4 +1,6 @@
 /* CSS da configurção da Página Home */
+/* # -> seletor, seleciona as tags 
+. -> classes, seleciona as classes declaradas nas tags */
 #page-landing {
     /* definindo a cor de fundo da página */
     background-color: var(--color-primary);
