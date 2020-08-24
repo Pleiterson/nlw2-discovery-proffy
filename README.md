@@ -1,4 +1,4 @@
-c<!-- Badges session -->
+<!-- Badges session -->
 <p align="center">  
   <!-- languages -->
   <img src="https://img.shields.io/github/languages/count/pleiterson/nlw2-discovery-proffy?style=social" alt="Linguagens utilizadas">
