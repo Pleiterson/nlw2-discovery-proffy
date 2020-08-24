@@ -1,42 +1,74 @@
-<img src="./assets/proffy-banner.png">
+c<!-- Badges session -->
+<p align="center">  
+  <!-- languages -->
+  <img src="https://img.shields.io/github/languages/count/pleiterson/nlw2-discovery-proffy?style=social" alt="Linguagens utilizadas">
+  <!-- repo size -->
+  <img src="https://img.shields.io/github/repo-size/Pleiterson/nlw2-discovery-proffy?style=social" alt="Tamanho do repositório">
+  <!-- last commit -->
+  <img src="https://img.shields.io/github/last-commit/Pleiterson/nlw2-discovery-proffy?style=social" alt="Último commit">
+  <!-- licence MIT -->
+  <img src="https://img.shields.io/github/license/Pleiterson/nlw2-discovery-proffy?style=social" alt="Licença MIT">
+</p>
 
-### 🚀 Next Level Week NLW #02 - Trilha Discovery
 
-A trilha Discovery do Next Level Week foi desenhada para você que está dando os primeiros passos em desenvolvimento web ou começando do zero na programação.
+<!--Banner session-->
+<img src="./assets/proffy-banner.png" alt="Proffy Banner" title="Proffy | Sua plataforma de estudos online">
 
-Como já faz alguns anos que não tinha contato com HTML e muito menos CSS, que mesmo vendo na Imersão [GameDev](https://editor.p5js.org/pleiterson/embed/1RMkKmkOm) e [ReactJS](https://pleiflix.vercel.app) da Alura, rsolvi realizar primeiro esta etpa para rever conhecer e entender mais sobre CSS. E o aprendizado está sendo incrível, a cada minuto que aprendo, minha cabeça já processa várias ideias para colocar em prática, que com o tempo serão concretizadas!
 
-Neste projeto foi criado a plataforma de estudos [Proffy](https://proffydiscovery-theta.vercel.app/).
+<!--About session-->
+<h1 align="center">🚀 Next Level Week NLW#02 - Trilha Discovery 🚀</h1>
 
-### 🔍 Dados e Arquivos das aulas
+A trilha Discovery do Next Level Week da [Rockeseat](https://rocketseat.com.br/) foi desenhada para você que está dando os primeiros passos em desenvolvimento web ou começando do zero na programação. [Proffy](https://proffydiscovery-theta.vercel.app) - O projeto surgiu com a missão de trazer uma homenagem aos educadores do Brasil, através de uma plataforma que conecta alunos e professores de diversas matérias. Todo o desenvolvimento foi feito na semana do dia nacional dos profissionais de educação.
+
+Como já faz alguns anos que não tinha contato com HTML e muito menos CSS que nunca vi, e que mesmo vendo na Imersão [GameDev](https://editor.p5js.org/pleiterson/embed/1RMkKmkOm) e [ReactJS](https://pleiflix.vercel.app) da Alura, resolvi realizar primeiro esta a Trilha Dicovery para rever, conhecer e entender mais sobre CSS. E o aprendizado foi sendo incrível, a cada minuto que aprendo, minha cabeça já processa várias ideias para colocar em prática, que com o tempo serão concretizadas!
+
+
+ <h3>🔍 Dados e Arquivos das aulas</h3>
 
 - [Layout Proffy](https://www.notion.so/Layout-Proffy-624823e996bd4178ab3cd593227773f7)
 - [Front-end](https://www.notion.so/Front-end-b41c3de7b397473bac6a7569eb76e42e)
+- [Back-end](https://www.notion.so/Back-end-217c9f4ada164d6dad0e1d87a6573bb8)
+- [Banco de Dados](https://www.notion.so/Banco-de-Dados-df452e1974804be8848c57924e1d4da0)
 
-### 👨‍💻 Tecnologias utilizadas
+
+<h3>👨‍💻 Tecnologias utilizadas</h3>
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Node.JS](https://nodejs.org)
+  - [Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introdu%C3%A7%C3%A3o)
+  - [Nodemon](https://github.com/remy/nodemon#nodemon)
+  - [Nunjucks](https://mozilla.github.io/nunjucks/templating.html)
+- [Git Bash](https://gitforwindows.org)
 
-### 🚀 O que foi visto nas aulas
 
-- **Aula 01 | Acelerando a sua Evolução**
-  - Explicado pelo mestre [Mayk Brito](https://www.linkedin.com/in/maykbrito/) os conceitos de Front-end e Back-end, Linguagens de programação, assim como as tecnologias de HTML (tags head e body) e CSS (Responsividade, Box Label, Textos, etc.) que foram utilizadas nesta primeira aula.
+<h3>🚀 O que foi visto nas aulas</h3>
 
-- **Aula 02 | Olhando as oportunidades**
-  - Concluída a codificação do layout da Home da [Proffy](https://proffydiscovery-theta.vercel.app/) onde foi explicado vários comandos CSS e, explicado detalhadamente o grid.
-  Iniciado a codificação do layout da página de Listagem, que contém a relação de todos os proffys disponíveis para dar aulas. Configurado tamém o formulário de envio de dados ao back-end, que sera realizado posteriormente.
+- <b>Aula 01 | <i>Acelerando a sua Evolução</i></b>
+  - Explicado pelo mestre [Mayk Brito](https://www.linkedin.com/in/maykbrito) os conceitos de Front-end e Back-end, Linguagens de programação, assim como as tecnologias de HTML (tags head e body, etc.) e CSS (Responsividade, Box Label, Textos, etc.) que serão utilizados neste curso.
 
-- **Aula 03 | A Escolha da Stack**
-  - Refatorado o código quando ao header das páginas e formulários. Concluído a codificação do layout da páginda de Formulários, onde será cadastrado os professores na plataforma de estudos Proffy.
-  Iniciado a codificação em JavaScript do projeto [Proffy](https://proffydiscovery-theta.vercel.app/) quanto a duplicação dos "Horários disponíveis" na página de formulários de cadastramento de proffys ao clicar no botão "+ Novo horário".
+- <b>Aula 02 | <i>Olhando as oportunidades</i></b>
+  - Concluída a codificação do layout Home da [Proffy](https://proffydiscovery-theta.vercel.app) onde foi explicado vários comandos CSS e, explicado detalhadamente o grid.
+  Iniciado a codificação do layout da página de Listagem, que contém a relação de todos os proffys disponíveis para dar aulas. Configurado também o formulário de envio de dados ao back-end, que será codado posteriormente.
 
-- **Aula 04 | Até 2 Anos em 2 Meses**
-  - 
+- <b>Aula 03 | <i>A Escolha da Stack</i></b>
+  - Refatorado o código quando ao header das páginas e formulários. Concluído a codificação do layout da página de Formulários, onde é cadastrado os proffys na plataforma de estudos [Proffy](https://proffydiscovery-theta.vercel.app).
+  Iniciado a codificação em JavaScript do projeto quanto a duplicação dos campos <i>Horários disponíveis</i> ao clicar no botão <i>+ Novo horário</i>.
 
-- **Aula 05 | A Milha Extra**
-  - 
-  
+- <b>Aula 04 | <i>Até 2 Anos em 2 Meses</i></b>
+  - Iniciado o desenvolvimento e a explicação geral sobre back-end na pltaforma [Proffy](https://proffydiscovery-theta.vercel.app). Configurada as tecnologias que serão utilizadas no back-end, NodeJS (express, nodemon, nunjucks) e Git Bash, e refatorada as pastas do nosso código.
+  Realizado o a configuração em imprimir os professores disponíveis para <i>Estudar</i>, configurado também, o botão de <i>Entrar em contato</i> com os professores via WhatsApp. Atualizado os códigos dos formulários de filtragem/busca de professores. 
 
-<h4 align=center>Made with 💜 by <a href="https://www.linkedin.com/in/pleiterson/">Pleiterson Amorim</a></h4>
+- <b>Aula 05 | <i>A Milha Extra</i></b>
+  - <i>Em andamento...</i>
+
+
+<!--License session-->
+<h3>📝 Licença</h3>
+
+Este projeto está sob a licença [MIT](./LICENSE).
+
+
+<!--Bottom session-->
+<h4 align=center>Made with by <a href="https://www.linkedin.com/in/pleiterson">Pleiterson Amorim</a></h4>
