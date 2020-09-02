@@ -93,7 +93,11 @@
     :root {
         /* modificando as medidas rem */
         font-size: 40%;
-    }    
+    }
+    
+    .hero-image {
+        height: 45rem;
+    }
 }
 
 /* só executará quando a largura mínima da tela for de 1.100 pixels pra cima

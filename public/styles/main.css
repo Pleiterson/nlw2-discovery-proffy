@@ -68,7 +68,7 @@ body, input, button, textarea {
     color: var(--color-text-base); /* buscando a referência da cor definida no root */
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1100px) {
     :root {
         font-size: 62.5% /* todo 1rem vai ser relativo a 10px */
     }

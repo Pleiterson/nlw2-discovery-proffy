@@ -1,5 +1,5 @@
 <!-- Badges session -->
-<p align="center">  
+<p align="center">
   <!-- languages -->
   <img src="https://img.shields.io/github/languages/count/pleiterson/nlw2-discovery-proffy?style=social" alt="Linguagens utilizadas">
   <!-- repo size -->
@@ -16,11 +16,11 @@
 
 
 <!--About session-->
-<h1 align="center">🚀 Next Level Week NLW#02 - Trilha Discovery 🚀</h1>
+<h1 align="center">🚀 Next Level Week NLW#02 - Trilha Discovery 🚀<br>Rocketseat</h1>
 
 A trilha Discovery do Next Level Week da [Rockeseat](https://rocketseat.com.br/) foi desenhada para você que está dando os primeiros passos em desenvolvimento web ou começando do zero na programação. [Proffy](https://proffydiscovery-theta.vercel.app) - O projeto surgiu com a missão de trazer uma homenagem aos educadores do Brasil, através de uma plataforma que conecta alunos e professores de diversas matérias. Todo o desenvolvimento foi feito na semana do dia nacional dos profissionais de educação.
 
-Como já faz alguns anos que não tinha contato com HTML e muito menos CSS que nunca vi, e que mesmo vendo na Imersão [GameDev](https://editor.p5js.org/pleiterson/embed/1RMkKmkOm) e [ReactJS](https://pleiflix.vercel.app) da Alura, resolvi realizar primeiro esta a Trilha Dicovery para rever, conhecer e entender mais sobre CSS. E o aprendizado foi sendo incrível, a cada minuto que aprendo, minha cabeça já processa várias ideias para colocar em prática, que com o tempo serão concretizadas!
+Como já faz alguns anos que não tinha contato com HTML e muito menos CSS que nunca vi, e que mesmo vendo na Imersão [GameDev](https://imersaogamedev-javascript.vercel.app) e [ReactJS](https://pleiflix.vercel.app) da Alura, resolvi realizar primeiro esta a Trilha Dicovery para rever, conhecer e entender mais sobre CSS. E o aprendizado foi sendo incrível, a cada minuto que aprendo, minha cabeça já processa várias ideias para colocar em prática, que com o tempo serão concretizadas!
 
 
  <h3>🔍 Dados e Arquivos das aulas</h3>
@@ -41,7 +41,7 @@ Como já faz alguns anos que não tinha contato com HTML e muito menos CSS que n
   - [Nodemon](https://github.com/remy/nodemon#nodemon)
   - [Nunjucks](https://mozilla.github.io/nunjucks/templating.html)
 - [Git Bash](https://gitforwindows.org)
-
+- [SQLite (sqlite-async)](https://www.sqlite.org/index.html)
 
 <h3>🚀 O que foi visto nas aulas</h3>
 
@@ -61,7 +61,7 @@ Como já faz alguns anos que não tinha contato com HTML e muito menos CSS que n
   Realizado o a configuração em imprimir os professores disponíveis para <i>Estudar</i>, configurado também, o botão de <i>Entrar em contato</i> com os professores via WhatsApp. Atualizado os códigos dos formulários de filtragem/busca de professores. 
 
 - <b>Aula 05 | <i>A Milha Extra</i></b>
-  - <i>Em andamento...</i>
+  - Iniciado os conceitos de Banco de Dados e SQL para iniciar a codificação da base de dados da [Proffy](https://proffydiscovery-theta.vercel.app). Criado  banco de dados e as tabelas para inserção de dados e consultas. Criado o código para inserção dos dados no banco de dados, e mostrando os mesmos na tela após realizar o filtro de busca do aluno. Configurado a mensagem para quando não encontrar nenhum professor conforme o filtro realizado. Configurado o envio dos dados do formulário para outra página.
 
 
 <!--License session-->
@@ -71,4 +71,4 @@ Este projeto está sob a licença [MIT](./LICENSE).
 
 
 <!--Bottom session-->
-<h4 align=center>Made with by <a href="https://www.linkedin.com/in/pleiterson">Pleiterson Amorim</a></h4>
+<h4 align="center">Made with by <a href="https://www.linkedin.com/in/pleiterson">Pleiterson Amorim</a></h4>

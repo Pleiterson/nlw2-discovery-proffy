@@ -2,7 +2,6 @@
 // procurando o botão. quando clicar no botão (evento)
 document.querySelector('#add-time').addEventListener('click', cloneField);
 
-
 // executar uma ação
 function cloneField() {
     // duplicando os campos. quais campos? .schedule-item - boolean: true ou false
