@@ -18,8 +18,8 @@ server  // início e configuração do servidor
 .use(express.static("public")) // puxando todas as imagens e scripts da pasta public
 .use(express.urlencoded({extended: true})) // recebendo os dados do req.body
 // rotas da aplicação
-.get("/", pageLanding) // chamado a páginda Home
-.get("/study", pageStudy) // chamado a página Estudar
-.get("/give-classes", pageGiveClasses) // chamado a página Dar Aulas
+.get("/", pageLanding) // chamando a página Home
+.get("/study", pageStudy) // chamando a página Estudar
+.get("/give-classes", pageGiveClasses) // chamando a página Dar Aulas
 .post("/save-classes", saveClasses) // enviando os dados do formulário
 .listen(port) // start, porta utilizada para carregar as páginas

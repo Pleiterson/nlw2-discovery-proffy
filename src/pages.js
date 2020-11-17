@@ -2,7 +2,7 @@ const Database = require('./database/db');
 // desestruturando os comandos de format.js
 const {subjects, weekdays, getSubject, convertHoursMinuts} = require('./utils/format');
 
-// função que retorna a página "Home" da plataforma Proddy
+// função que retorna a página "Home" da plataforma Proffy
 function pageLanding(req, res) {
     return res.render("index.html");
 }

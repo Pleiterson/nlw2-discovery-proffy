@@ -46,7 +46,7 @@ Como já faz alguns anos que não tinha contato com HTML e muito menos CSS que n
 <h3>🚀 O que foi visto nas aulas</h3>
 
 - <b>Aula 01 | <i>Acelerando a sua Evolução</i></b>
-  - Explicado pelo mestre [Mayk Brito](https://www.linkedin.com/in/maykbrito) os conceitos de Front-end e Back-end, Linguagens de programação, assim como as tecnologias de HTML (tags head e body, etc.) e CSS (Responsividade, Box Label, Textos, etc.) que serão utilizados neste curso.
+  - Explicado pelo [Mayk Brito](https://www.linkedin.com/in/maykbrito) os conceitos de Front-end e Back-end, Linguagens de programação, assim como as tecnologias de HTML (tags head e body, etc.) e CSS (Responsividade, Box Label, Textos, etc.) que serão utilizados neste curso.
 
 - <b>Aula 02 | <i>Olhando as oportunidades</i></b>
   - Concluída a codificação do layout Home da Proffy, onde foi explicado vários comandos CSS e, explicado detalhadamente o grid.
@@ -57,7 +57,7 @@ Como já faz alguns anos que não tinha contato com HTML e muito menos CSS que n
   Iniciado a codificação em JavaScript do projeto quanto a duplicação dos campos <i>Horários disponíveis</i> ao clicar no botão <i>+ Novo horário</i>.
 
 - <b>Aula 04 | <i>Até 2 Anos em 2 Meses</i></b>
-  - Iniciado o desenvolvimento e a explicação geral sobre back-end na pltaforma Proffy. Configurada as tecnologias que serão utilizadas no back-end, NodeJS (express, nodemon, nunjucks) e Git Bash, e refatorada as pastas do nosso código.
+  - Iniciado o desenvolvimento e a explicação geral sobre back-end na plataforma Proffy. Configurada as tecnologias que serão utilizadas no back-end, NodeJS (express, nodemon, nunjucks) e Git Bash, e refatorada as pastas do nosso código.
   Realizado o a configuração em imprimir os professores disponíveis para <i>Estudar</i>, configurado também, o botão de <i>Entrar em contato</i> com os professores via WhatsApp. Atualizado os códigos dos formulários de filtragem/busca de professores. 
 
 - <b>Aula 05 | <i>A Milha Extra</i></b>
@@ -71,4 +71,4 @@ Este projeto está sob a licença [MIT](./LICENSE).
 
 
 <!--Bottom session-->
-<h4 align="center">Made with by <a href="https://www.linkedin.com/in/pleiterson">Pleiterson Amorim</a></h4>
+<br><h4 align=center>Made with by <a target="_blank" href="https://pleiterson.vercel.app" >Pleiterson Amorim</a></h4>
